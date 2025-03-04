@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1 class="mt-4">Tasks</h1>
+    {% for task in tasks %}
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ task.title }}</h5>
+                <p class="card-text">{{ task.content }}</p>
+                <p class="card-text"><small class="text-muted">Posted on {{ task.date_posted.strftime('%Y-%m-%d') }} by {{ task.author.username }}</small></p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

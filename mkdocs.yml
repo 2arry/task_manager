@@ -1,4 +1,4 @@
-site_name: Employee Management
+site_name: Task Manager
 site_description: A simple documentation site for Employee Management
 theme:
   name: material
